@@ -13,6 +13,7 @@ export default function App() {
       setResult('Please enter valid numbers');
       return;
     }
+    let calculation;
      };
      
   return (
