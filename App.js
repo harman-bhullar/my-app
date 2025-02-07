@@ -40,6 +40,7 @@ export default function App() {
           <Text style={styles.buttonText}>/</Text>
         </TouchableOpacity>
       </View>
+      {result !== null && <Text style={styles.result}>Result: {result}</Text>}
     </View>
   );
 }
