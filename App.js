@@ -47,7 +47,7 @@ export default function App() {
 
       <View style={styles.buttonContainer}>
 
-        <TouchableOpacity style={styles.button} >
+        <TouchableOpacity style={styles.button}onPress={() => handleOperation('add')} >
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} >
