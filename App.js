@@ -21,6 +21,8 @@ export default function App() {
           value={num2}
           onChangeText={setNum2}
         />
+        <View style={styles.buttonContainer}>
+            </View>
   );
 }
 
@@ -46,5 +48,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     marginVertical: 10,
     backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '80%',
+    marginTop: 20,
   },
 });
