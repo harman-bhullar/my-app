@@ -34,4 +34,14 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: 'white',
   },
+  input: {
+    width: '80%',
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: 10,
+    marginVertical: 10,
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  },
 });
