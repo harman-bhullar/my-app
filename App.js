@@ -6,6 +6,10 @@ export default function App() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');
   const [result, setResult] = useState(null);
+  const handleOperation = (operation) => {
+    const number1 = parseFloat(num1);
+    const number2 = parseFloat(num2);
+     };
   return (
     <View>
       <Text style={styles.title}>Calculator</Text>
@@ -41,6 +45,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
       {result !== null && <Text style={styles.result}>Result: {result}</Text>}
+      
     </View>
   );
 }
