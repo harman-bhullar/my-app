@@ -23,6 +23,7 @@ export default function App() {
     } else if (operation === 'divide') {
       calculation = number2 !== 0 ? number1 / number2 : 'Cannot divide by zero';
     }
+    setResult(calculation);
      };
      
   return (
