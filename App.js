@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 export default function App() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');
+  const [result, setResult] = useState(null);
   return (
     <View>
       <Text style={styles.title}>Calculator</Text>
