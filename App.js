@@ -47,16 +47,16 @@ export default function App() {
 
       <View style={styles.buttonContainer}>
 
-        <TouchableOpacity style={styles.button}onPress={() => handleOperation('add')} >
+        <TouchableOpacity style={styles.button} onPress={() => handleOperation('add')} >
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} >
+        <TouchableOpacity style={styles.button} onPress={() => handleOperation('subtract')} >
           <Text style={styles.buttonText}>-</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} >
+        <TouchableOpacity style={styles.button} onPress={() => handleOperation('multiply')} >
           <Text style={styles.buttonText}>*</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} >
+        <TouchableOpacity style={styles.button} onPress={() => handleOperation('divide')} >
           <Text style={styles.buttonText}>/</Text>
         </TouchableOpacity>
       </View>
