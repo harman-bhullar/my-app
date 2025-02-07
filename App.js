@@ -4,6 +4,20 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <Text style={styles.title}>Calculator</Text>
+    <TextInput
+          style={styles.input}
+          placeholder="Enter first number"
+          keyboardType="numeric"
+          value={num1}
+          onChangeText={setNum1}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Enter second number"
+          keyboardType="numeric"
+          value={num2}
+          onChangeText={setNum2}
+        />
   );
 }
 
