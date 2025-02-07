@@ -9,7 +9,12 @@ export default function App() {
   const handleOperation = (operation) => {
     const number1 = parseFloat(num1);
     const number2 = parseFloat(num2);
+    if (isNaN(number1) || isNaN(number2)) {
+      setResult('Please enter valid numbers');
+      return;
+    }
      };
+     
   return (
     <View>
       <Text style={styles.title}>Calculator</Text>
