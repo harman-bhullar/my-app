@@ -7,27 +7,30 @@ export default function App() {
   const [num2, setNum2] = useState('');
   return (
     <View>
-    <Text style={styles.title}>Calculator</Text>
-    <TextInput
-          style={styles.input}
-          placeholder="Enter first number"
-          keyboardType="numeric"
-          value={num1}
-          onChangeText={setNum1}
-        />
-        
-        <TextInput
-          style={styles.input}
-          placeholder="Enter second number"
-          keyboardType="numeric"
-          value={num2}
-          onChangeText={setNum2}
-        />
-        
-        <View style={styles.buttonContainer}>
-        <Text style={styles.buttonText}>+</Text>
-            </View>
-            </View>
+      <Text style={styles.title}>Calculator</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Enter first number"
+        keyboardType="numeric"
+        value={num1}
+        onChangeText={setNum1}
+      />
+
+      <TextInput
+        style={styles.input}
+        placeholder="Enter second number"
+        keyboardType="numeric"
+        value={num2}
+        onChangeText={setNum2}
+      />
+
+      <View style={styles.buttonContainer}>
+
+        <TouchableOpacity style={styles.button} >
+          <Text style={styles.buttonText}>+</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
   );
 }
 
@@ -63,5 +66,12 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 18,
+  },
+  button: {
+    backgroundColor: '#007bff',
+    padding: 10,
+    borderRadius: 8,
+    width: 50,
+    alignItems: 'center',
   },
 });
