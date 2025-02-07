@@ -14,6 +14,15 @@ export default function App() {
       return;
     }
     let calculation;
+    if (operation === 'add') {
+      calculation = number1 + number2;
+    } else if (operation === 'subtract') {
+      calculation = number1 - number2;
+    } else if (operation === 'multiply') {
+      calculation = number1 * number2;
+    } else if (operation === 'divide') {
+      calculation = number2 !== 0 ? number1 / number2 : 'Cannot divide by zero';
+    }
      };
      
   return (
