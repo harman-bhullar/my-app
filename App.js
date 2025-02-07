@@ -29,7 +29,8 @@ export default function App() {
      };
      
   return (
-    <View>
+    <LinearGradient colors={["#0061ff", "#60efff"]} style={styles.gradient}>
+  <BlurView intensity={50} style={styles.container}>
       <Text style={styles.title}>Calculator</Text>
       <TextInput
         style={styles.input}
@@ -64,16 +65,20 @@ export default function App() {
       </View>
       {result !== null && <Text style={styles.result}>Result: {result}</Text>}
       
-    </View>
+      </BlurView>
+      </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
+  gradient: {
+    flex: 1,
+  },
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    padding: 16,
   },
   title: {
     fontSize: 24,
