@@ -6,6 +6,7 @@ export default function App() {
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState('');
   return (
+    <View>
     <Text style={styles.title}>Calculator</Text>
     <TextInput
           style={styles.input}
@@ -14,6 +15,7 @@ export default function App() {
           value={num1}
           onChangeText={setNum1}
         />
+        
         <TextInput
           style={styles.input}
           placeholder="Enter second number"
@@ -21,7 +23,10 @@ export default function App() {
           value={num2}
           onChangeText={setNum2}
         />
+        
         <View style={styles.buttonContainer}>
+        <Text style={styles.buttonText}>+</Text>
+            </View>
             </View>
   );
 }
@@ -54,5 +59,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     width: '80%',
     marginTop: 20,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
   },
 });
